@@ -1,0 +1,442 @@
+﻿@page "/header"
+
+<head>
+    <script>
+        function loadCustomerData() {
+            var otherData = document.getElementById("other-data");
+            var customerData = document.getElementById("customer-data");
+            var molaData = document.getElementById("mola-data");
+            otherData.style.display = "none"
+            customerData.style.display="block"
+            molaData.style.display = "none"
+            document.getElementById('customerTab').classList.add('active');
+            document.getElementById('molaTab').classList.remove('active');
+            document.getElementById('otherTab').classList.remove('active');
+
+        }
+        
+        function loadOtherData() {
+            var otherData = document.getElementById("other-data");
+            var customerData = document.getElementById("customer-data");
+            var molaData = document.getElementById("mola-data");
+            otherData.style.display = "block"
+            customerData.style.display = "none"
+            molaData.style.display = "none"
+            document.getElementById('customerTab').classList.remove('active');
+            document.getElementById('molaTab').classList.remove('active');
+            document.getElementById('otherTab').classList.add('active');
+          
+        }
+        function load3molaData() {
+            var otherData = document.getElementById("other-data");
+            var customerData = document.getElementById("customer-data");
+            var molaData = document.getElementById("mola-data");
+            otherData.style.display = "none"
+            customerData.style.display = "none"
+            molaData.style.display = "block"
+            document.getElementById('customerTab').classList.remove('active');
+            document.getElementById('molaTab').classList.add('active');
+            document.getElementById('otherTab').classList.remove('active');
+        }
+        
+
+    </script>
+</head>
+
+<div dir="rtl">
+    <div class="row parent ">
+
+        <div  class="col-lg-8 col-md-4 col-sm-12  p-2" >
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class=" "><a class="nav-link active nav-style" data-toggle="tab">بيانات الفاتوره</a></li>
+            </ul>
+            <div class="row right-col">
+                <div class="col-4">
+
+                    <div class="form-group row">
+                        <label for="bill-no" class="col-sm-12 col-md-12 col-lg-3 col-form-label">رقم الفاتوره : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <select id="bill-no"  class="form-control input">
+                                <option> اختار رقم الفاتوره</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="order-no" class="col-sm-12 col-md-12 col-lg-3 col-form-label">رقم ألطلبيه : </label>
+
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="order-no" type="text" class="form-control input">
+                                <option> اختار رقم الطلبيه</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="save-no" class="col-sm-12 col-md-12 col-lg-3 col-form-label">رقم القيد : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <select id="save-no" class="form-control input">
+                                <option> اختار رقم القيد</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="history" class="col-sm-12 col-md-12 col-lg-3 col-form-label">المرجع : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <select id="history" class="form-control input">
+                                <option> اختار المرجع</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التاريخ : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <input id="date" type="date" pattern="\d{1,2}-\d{1,2}-\d{4}" class="form-control input" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="date2" class="col-sm-12 col-md-12 col-lg-3 col-form-label">الموافق : </label>
+
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <input id="date2" type="date" class="form-control input" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="date3" class="col-sm-12 col-md-12 col-lg-3 col-form-label">الاستحقاق : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <input id="date3" type="date" class="form-control input" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="cur" class="col-sm-12 col-md-12 col-lg-3 col-form-label">العمله : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="cur" class="form-control input">
+                                <option> اختر العمله</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exchange" class="col-sm-12 col-md-12 col-lg-3 col-form-label">الصرف : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <input id="exchange" type="text" class="form-control input" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التعامل : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <select id="cost" type="date" class="form-control input">
+                                <option> اختار التعامل</option>
+                                <option value="1"> نقدي</option>
+                                <option value="2">اجل</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cost" class="col-sm-12 col-md-12 col-lg-3 col-form-label">م.التكلفه : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="cost" type="date" class="form-control input">
+                                <option> اختار رقم الطلبيه</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="delg" class="col-sm-12 col-md-12 col-lg-3 col-form-label">المندوب : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="delg" type="date" class="form-control input">
+                                <option> اختار المندوب</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inv" class="col-sm-12 col-md-12 col-lg-3 col-form-label">المستودع  : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="inv" type="date" class="form-control input">
+                                <option> اختار المستودع</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="out" class="col-sm-12 col-md-12 col-lg-3 col-form-label"> المخرج : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+
+                            <select id="out" type="date" class="form-control input">
+                                <option> اختار المخرج</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div  class="col-lg-4 col-md-8 col-sm-12 p-2">
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class=""><a id="customerTab" class="nav-link active nav-style" data-toggle="tab" onclick="loadCustomerData()">بيانات العميل</a></li>
+                <li class=""><a id="molaTab" class="nav-link nav-style" data-toggle="tab" onclick="load3molaData()">بيانات العموله</a></li>
+                <li class=""><a id="otherTab" class="nav-link nav-style" data-toggle="tab" onclick="loadOtherData()">بيانات اخرى</a></li>
+            </ul>
+
+            <div style=" display:block;" id="customer-data" class="row left-col">
+
+                <div class="form-group row">
+                    <label for="cus" class="col-sm-12 col-md-12 col-lg-3 col-form-label">العميل : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-9 row">
+                        <span class="col-4 ">
+
+                            <input id="cus" type="text" class="form-control input" onkeydown="handleEnterKey(event, 'cus2')" />
+                        </span>
+                        <span class="col-8 p-md-0">
+
+                            <input id="cus2" type="text" class="form-control input" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="tah" class="col-sm-12 col-md-12 col-lg-3 col-form-label">ح.تحليلي : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-9 row">
+                        <span class="col-4 ">
+
+                            <input id="tah" type="text" class="form-control input" />
+                        </span>
+                        <span class="col-8 p-md-0">
+
+                            <input id="tah" type="text" class="form-control input" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">العنوان : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input id="addres" type="text" class="form-control input" />
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-7 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-5 col-form-label">ر.الضرايب : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                    <div class="col-5 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التيليفون</label>
+                        <div class="col-sm-12 col-md-12 col-lg-9 ">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-7 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-5 col-form-label">الرصيد : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                    <div class="col-5 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التيليفون</label>
+                        <div class="col-sm-12 col-md-12 col-lg-9 ">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="note" class="col-sm-12 col-md-12 col-lg-3 col-form-label">ملاحظات : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input id="note" type="text" class="form-control input" />
+                    </div>
+                </div>
+            </div>
+            <div style="display:none;" id="other-data"  class="row left-col">
+
+
+                <div class="form-group row">
+                    <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">العنوان : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input id="addres" type="text" class="form-control input" />
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-7 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-5 col-form-label">ر.الضرايب : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                    <div class="col-5 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التيليفون</label>
+                        <div class="col-sm-12 col-md-12 col-lg-9 ">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-7 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-5 col-form-label">الرصيد : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                    <div class="col-5 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التيليفون</label>
+                        <div class="col-sm-12 col-md-12 col-lg-9 ">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="note" class="col-sm-12 col-md-12 col-lg-3 col-form-label">ملاحظات : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input id="note" type="text" class="form-control input" />
+                    </div>
+                </div>
+            </div> 
+            <div style=" display:none;" id="mola-data" class="row left-col">
+
+                <div class="form-group row">
+                    <label for="cus" class="col-sm-12 col-md-12 col-lg-3 col-form-label">العميل : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-9 row">
+                        <span class="col-4 ">
+
+                            <input id="cus" type="text" class="form-control input" onkeydown="handleEnterKey(event, 'cus2')" />
+                        </span>
+                        <span class="col-8 p-md-0">
+
+                            <input id="cus2" type="text" class="form-control input" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="tah" class="col-sm-12 col-md-12 col-lg-3 col-form-label">ح.تحليلي : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-9 row">
+                        <span class="col-4 ">
+
+                            <input id="tah" type="text" class="form-control input" />
+                        </span>
+                        <span class="col-8 p-md-0">
+
+                            <input id="tah" type="text" class="form-control input" />
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="form-group row">
+                    <div class="col-7 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-5 col-form-label">الرصيد : </label>
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                    <div class="col-5 row">
+
+                        <label for="addres" class="col-sm-12 col-md-12 col-lg-3 col-form-label">التيليفون</label>
+                        <div class="col-sm-12 col-md-12 col-lg-9 ">
+                            <input id="addres" type="text" class="form-control input" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="note" class="col-sm-12 col-md-12 col-lg-3 col-form-label">ملاحظات : </label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input id="note" type="text" class="form-control input" />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<style>
+    
+
+    label {
+        color:blue;
+        font-size:large;
+        font-weight:bold;
+    }
+
+
+    .right-col, .left-col {
+        border:solid gray 1px;
+        padding:5px;
+        background-color: #F0FFFF
+    }
+
+    .nav-style{
+        background-color:#008B8B !important;
+        color:white !important;
+        border-top-left-radius: 30px !important; 
+    }
+</style>
+
+
+    <script>
+   
+    document.addEventListener("keydown", function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); 
+
+            const allInputs = Array.from(document.getElementsByClassName('input'));
+            const currentIndex = allInputs.findIndex(input => input === document.activeElement);
+
+            if (currentIndex !== -1) {
+                const nextIndex = (currentIndex + 1) % allInputs.length;
+                allInputs[nextIndex].focus(); 
+            }
+        }
+    });
+   
+    
+
+</script>
+@code {
+
+}
