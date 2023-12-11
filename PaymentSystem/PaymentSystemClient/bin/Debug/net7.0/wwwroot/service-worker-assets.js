@@ -845,7 +845,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-eRbsSkKiWKWKcMiqy13LuLSBIpzmn52qw\/6SX+1jNQ0=",
+      "hash": "sha256-WVA9YYlKV0xMZsFDei6O\/pENeBUOkx0uk1tFzZEwRTg=",
       "url": "_framework\/dotnet.7.0.13.26z4jauyx0.js"
     },
     {
@@ -873,11 +873,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-U89XB6v6jDdsADaWToGoJgN3+6VxJYuDSzUWKgMkHR4=",
+      "hash": "sha256-sKrSrskAL3\/gzA2I1jCThrRGz+7tcuw8eDkmGSwCnqs=",
       "url": "_framework\/PaymentSystemClient.dll"
     },
     {
-      "hash": "sha256-BbKhwEuilefqKcPZgZAuU0rdS6\/3dnbOKMZjHpecxQA=",
+      "hash": "sha256-IjjnB+7Glwxn+Gs2lWNBKg6CwaxSNYdqluivFFUwoNs=",
       "url": "_framework\/PaymentSystemClient.pdb"
     },
     {
@@ -885,9 +885,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-GBAPt8eZzfZDOaMpx4eBlsGGuIBQ642x557LaHa4xNI=",
+      "hash": "sha256-fh5Et0AV65RJPkqSyovgZ5abDWnkvi1it6vGhIC4q8c=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "ErNTunI6"
+  "version": "SFXuUcVi"
 };
