@@ -1,0 +1,120 @@
+﻿<!-- Body.razor -->
+@page "/body"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+
+<table id="dynamic-table">
+  <thead>
+    <tr>
+      <th>م</th>
+      <th>رقم الصنف</th>
+      <th>وصف الصنف</th>
+      <th>الوحده</th>
+      <th>مست</th>
+      <th>الكميه</th>
+      <th>السعر</th>
+      <th>الخصم</th>
+      <th>الاجمالي</th>
+      <th>ضريبه</th>
+      <th>الصافي مع الضريبه</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="extractValuesBtn">Extract Values</button>
+
+<!-- ... (previous HTML code) ... -->
+
+<script>
+  document.getElementById("dynamic-table").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent default behavior of the Enter key
+
+      // Get the currently focused element
+      const focusedElement = document.activeElement;
+
+      // Get the current row and column index
+      const rowIndex = focusedElement.parentElement.rowIndex;
+      const colIndex = focusedElement.cellIndex;
+
+      // If in the last column, create a new row
+      if (colIndex === 10) {
+        const table = document.getElementById("dynamic-table");
+        const newRow = table.insertRow(rowIndex + 1);
+
+        // Add cells to the new row
+        for (let i = 0; i < 11; i++) {
+          const cell = newRow.insertCell(i);
+          cell.contentEditable = true;
+        }
+
+        // Focus on the first cell of the new row
+        newRow.cells[0].focus();
+      } else {
+        // Focus on the next cell in the same row
+        focusedElement.parentElement.cells[colIndex + 1].focus();
+      }
+    }
+  });
+
+  document.getElementById("extractValuesBtn").addEventListener("click", function () {
+    const table = document.getElementById("dynamic-table");
+    const rows = table.getElementsByTagName("tr");
+    const dataList = [];
+
+    for (let i = 0; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName("td");
+      const rowData = {};
+
+      for (let j = 0; j < cells.length; j++) {
+        const cellValue = cells[j].innerText.trim();
+        rowData[j] = cellValue;
+      }
+
+      dataList.push(rowData);
+    }
+
+    // Log the list of objects to the console
+    console.log(dataList);
+  });
+</script>
+
+<!-- ... (remaining HTML code) ... -->
+
+</body>
+</html>
