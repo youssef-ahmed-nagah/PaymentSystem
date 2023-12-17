@@ -1,0 +1,262 @@
+﻿@page "/footer"
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .column {
+            float: right;
+            height: 50vh;
+            background-color: lightgrey;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .column2 {
+            background-color: mediumblue;
+            padding: 8px;
+            direction: rtl;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .inputLabel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input {
+            width: calc(100% - 12px);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .backGreen {
+            background-color: seagreen;
+            color: white;
+            width: 80%;
+        }
+
+        .backRed {
+            background-color: palevioletred;
+            color: white;
+            width: 80%;
+        }
+
+        .backDark {
+            background-color: darkslategray;
+            color: white;
+            width: 80%;
+        }
+
+        .logout-button {
+            width: 100%;
+        }
+
+        .table th {
+            background-color: lightslategray !important;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .data-table td {
+            padding: 15px;
+        }
+
+        .table th,
+        .table td {
+            width: auto;
+            text-align: center;
+        }
+
+
+
+        .special-cell {
+            background-color: cornflowerblue !important;
+            color: white !important;
+        }
+
+        .labels1 {
+            color: darkblue
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row col-md-12">
+
+        <div class="column col-md-5 mx-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group inputLabel">
+                        <label class="labels1" style="margin-right: 10px;">الوصف:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group inputLabel">
+                        <label class="labels1" style="margin-right: 10px;">الموقع:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group inputLabel">
+                        <label class="labels1" style="margin-right: 10px;">التعبئة:</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <table class="table mt-4 mb-5 data-table">
+                <thead class="text-center bg-dark">
+                    <tr>
+
+                        <th width="30%" colspan="2">المستودع</th>
+                        <th>الكمية</th>
+                        <th>ك.تخزين</th>
+                        <th>المحجوز</th>
+                        <th>المطلوب</th>
+                        <th>الموقع</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td colspan="2" class="special-cell"></td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="container m-2" dir="ltr">
+                    <ul class="pagination">
+                        <li class="page-item"> <a class="page-link" href="#"> السابق </a> </li>
+                        <li class="page-item"> <a class="page-link" href="#"> 2 </a> </li>
+                        <li class="page-item"> <a class="page-link" href="#"> 3 </a> </li>
+                        <li class="page-item"> <a class="page-link" href="#"> 4 </a> </li>
+                        <li class="page-item disabled"> <a class="page-link" href="#"> 5 </a> </li>
+                        <li class="page-item disabled"> <a class="page-link" href="#"> التالي </a> </li>
+                        <div class="row">
+                            <div class="container m-2" dir="ltr">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <i class="fa-solid fa-print" style="font-size:35px; margin-left:2em"></i>
+                                        طباعة
+                                    </li>
+                                    <li class="page-item">
+                                        <i class="fa-solid fa-magnifying-glass-plus" style="font-size:35px; margin-left:2em"></i>
+                                        بحث
+                                    </li>
+                                    <li class="page-item">
+                                        <i class="fa-solid fa-circle-plus" style="font-size:35px; margin-left:7em"></i>
+                                        اضافة
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column col-md-3 mx-3">
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input1">أج.الكمية:</label>
+                <input type="text" class="form-control" style="width: 80%;" id="input1">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input2">المدفوع:</label>
+                <input type="text" class="form-control backGreen" id="input2">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input3">شبكة:</label>
+                <input type="text" class="form-control backGreen" id="input3">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input4">مرتجع:</label>
+                <input type="text" class="form-control backGreen" id="input4">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input5">الباقي:</label>
+                <input type="text" class="form-control backRed" id="input5">
+            </div>
+
+
+            <ul class="mt-2" style="list-style: none;">
+                <li class="page-item">
+                    <i class="fa-solid fa-door-open" style="font-size:35px;"></i>خروج
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="column col-md-3 mx-3">
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input1">الاجمالي:</label>
+                <input type="text" class="form-control backDark" id="input1" style="width: 80%;">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input2">اضافات الفاتورة:</label>
+                <input type="text" class="form-control backDark" id="input2" style="width: 80%;">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input3">الاجمالي الكلي:</label>
+                <input type="text" class="form-control backDark" id="input3">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input4">الخصم:</label>
+                <input type="text" class="form-control backRed" id="input4">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input5">صافي الفاتورة:</label>
+                <input type="text" class="form-control backRed" id="input5">
+            </div>
+            <div class="form-group inputLabel" style="display: flex; align-items: flex-start;">
+                <label class="labels1" for="input4">ض.ق. المضافة 15%:</label>
+                <input type="text" class="form-control backGreen" id="input4">
+            </div>
+            <div class="form-group inputLabel">
+                <label class="labels1" for="input5">الصافي مع الضرائب:</label>
+                <input type="text" class="form-control backRed" id="input5">
+            </div>
+        </div>
+
+
+        <div class="column2 col-md-12">
+            <label style="color:white; font-weight:bold;font-size:20px; padding-right:20px">جاهز</label>
+        </div>
+    </div>
+
+</body>
+</html>

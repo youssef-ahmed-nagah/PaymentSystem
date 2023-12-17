@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = PaymentSystemClient
 build_property.RootNamespace = PaymentSystemClient
-build_property.ProjectDir = D:\PaymentSystem\PaymentSystem\PaymentSystemClient\
+build_property.ProjectDir = D:\ىثص\PaymentSystem\PaymentSystem\PaymentSystemClient\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\PaymentSystem\PaymentSystem\PaymentSystemClient
+build_property.MSBuildProjectDirectory = D:\ىثص\PaymentSystem\PaymentSystem\PaymentSystemClient
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/App.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Body.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Body.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9keS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Counter.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/FetchData.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Header.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Index.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/SurveyPrompt.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/_Imports.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/MainLayout.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-z7wehtvd5p
 
-[D:/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/NavMenu.razor]
+[D:/ىثص/PaymentSystem/PaymentSystem/PaymentSystemClient/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4tvzqbsrpc

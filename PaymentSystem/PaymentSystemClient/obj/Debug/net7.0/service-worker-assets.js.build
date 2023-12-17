@@ -873,11 +873,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-sKrSrskAL3\/gzA2I1jCThrRGz+7tcuw8eDkmGSwCnqs=",
+      "hash": "sha256-tcKL5fC9HM2+FBZRLCA6SzseUh1MnMO9I5bcwFioFJU=",
       "url": "_framework\/PaymentSystemClient.dll"
     },
     {
-      "hash": "sha256-IjjnB+7Glwxn+Gs2lWNBKg6CwaxSNYdqluivFFUwoNs=",
+      "hash": "sha256-i2vU59N6fQuTi\/aoN4DAf2vtSB2pCu\/xmtrZkBVllJ4=",
       "url": "_framework\/PaymentSystemClient.pdb"
     },
     {
@@ -885,9 +885,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-fh5Et0AV65RJPkqSyovgZ5abDWnkvi1it6vGhIC4q8c=",
+      "hash": "sha256-EkU3j8BZMV8p7ZYzZfbWvpYbpJhi7NctOGCDB8e4xLg=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "SFXuUcVi"
+  "version": "dDTmyabH"
 };

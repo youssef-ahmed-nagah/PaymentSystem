@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj": {}
+    "D:\\ىثص\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj": {}
   },
   "projects": {
-    "D:\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj": {
+    "D:\\ىثص\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj",
+        "projectUniqueName": "D:\\ىثص\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj",
         "projectName": "PaymentSystemClient",
-        "projectPath": "D:\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj",
+        "projectPath": "D:\\ىثص\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\PaymentSystemClient.csproj",
         "packagesPath": "C:\\Users\\noure\\.nuget\\packages\\",
-        "outputPath": "D:\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\obj\\",
+        "outputPath": "D:\\ىثص\\PaymentSystem\\PaymentSystem\\PaymentSystemClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages"

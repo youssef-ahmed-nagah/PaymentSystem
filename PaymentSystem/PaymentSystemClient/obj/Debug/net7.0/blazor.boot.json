@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-1LEP8nUca7i3KzI4Zu9AD7rJ8CadngV0YUKjoHGiFxA=",
       "netstandard.dll": "sha256-+zXQN9625IUa11YLU5hNoQ04oHjCwFIJAXc8vOEMniU=",
       "System.Private.CoreLib.dll": "sha256-oytzvvuRkpVGZxuLwt9SR8n1KJzGeYroKTHxk0oZvfI=",
-      "PaymentSystemClient.dll": "sha256-tcKL5fC9HM2+FBZRLCA6SzseUh1MnMO9I5bcwFioFJU="
+      "PaymentSystemClient.dll": "sha256-9tCyYjB5N6iRW00C3oCaZzYfB0Acg+SO59+oFFW33PI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "PaymentSystemClient.pdb": "sha256-i2vU59N6fQuTi\/aoN4DAf2vtSB2pCu\/xmtrZkBVllJ4="
+      "PaymentSystemClient.pdb": "sha256-1Iz29a\/1pNGhjU4QRbnkRAWXhDHX8EMHebEGIQKfdRQ="
     },
     "runtime": {
       "dotnet.7.0.13.26z4jauyx0.js": "sha256-eRbsSkKiWKWKcMiqy13LuLSBIpzmn52qw\/6SX+1jNQ0=",
